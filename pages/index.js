@@ -118,7 +118,7 @@ const TodoList = ({ todos, setTodos }) => {
   )
 }
 
-function AddTodoForm({ todos, setTodos }) {
+export function AddTodoForm({ todos, setTodos }) {
   const { session } = useSession()
   const [newTodo, setNewTodo] = useState('')
   const handleSubmit = async e => {
